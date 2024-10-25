@@ -919,5 +919,38 @@ color: grey;
 	-moz-appearance: none;
 }
 /* radio********************************************** */
-    
+.about__ca {
+ max-width: 300px;
+ min-height: 200px;
+ margin: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.z__left {
+  max-width: 800px;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  
+}
+.septic__left {
+  max-width: 490px;
+  width: 100%;
+  padding: 5px;
+}
+.septic__right {
+  max-width: 490px;
+  width: 100%;
+  padding: 5px;
+}
+.about__inner{
+  display: flex;
+  flex-wrap: nowrap;  
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+   
+}    
 
