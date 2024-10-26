@@ -1077,3 +1077,72 @@ label.required::before {
 .sidebar .collapse-filters-btn {
     color: var(--contrast-color);
 }
+/* ============================= Cart Page ============================ */
+.cart-content table img {
+    max-width: 100px;
+}
+
+.cart-content table th {
+    text-align: center;
+}
+
+.cart-content table td {
+    padding: 1rem;
+}
+
+.cart-content-title {
+    text-decoration: none;
+    display: block;
+}
+
+.cart-qty {
+    width: 70px;
+}
+
+.btn-coupon {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.btn-coupon:hover {
+    color: var(--contrast-color);
+}
+
+.cart-summary h3 {
+    color: #000;
+}
+
+.cart-summary .btn {
+    padding: 1rem;
+}
+
+#checkoutForm {
+    position: relative;
+}
+
+.ajax-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 2;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.ajax-loader.fade {
+    display: block;
+    opacity: 1;
+}
+
+.ajax-loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ============================= Cart Page ============================ */
