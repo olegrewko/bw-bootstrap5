@@ -94,7 +94,7 @@
       <div class="header-bottom sticky-top">
        
         <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
-          <a class="navbar-brand" href="#">Bowers&Wilkins</a>
+          <a class="navbar-brand" href="./index.html">Bowers&Wilkins</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -224,7 +224,7 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3 col-md-4">
+                    <div class="col-lg-2 col-md-4">
                         <div class="sidebar">
 
                             <button class="btn btn-warning w-100 text-start collapse-filters-btn mb-3" type="button"
@@ -232,21 +232,31 @@
                                 aria-controls="collapseExample">
                                 <i class="fa-solid fa-filter"></i> Filters
                             </button>
-                            <button class="grid-products__btn">Home Audio</button>
-            <button class="grid-products__btn">Mini Theater</button>
-            <button class="grid-products__btn">Wireless Speakers</button>
-            <button class="grid-products__btn">New Zeppelin</button>
+<div class="tab">
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'Loudspeakers')" id="defaultOpen">Loudspeakers</button>
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'Mini Theater')">Mini Theater</button>
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'Wireless Speakers')">Wireless Speakers</button>
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'New Zeppelin')">New Zeppelin</button>
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'Car Audio')" >Car Audio</button>
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'Formation DUO')">Formation DUO</button>
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'Headphones')">Headphones</button>
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'Compact Monitors')">Compact Monitors</button>
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'Integrated solutions')" >Integrated solutions</button>
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'Soundbars')">Soundbars</button>
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'Subwoofers')">Subwoofers</button>
+            <button class="grid-products__btn tablinks" onclick="openCity(event, 'Shelf Monitors')">Shelf Monitors</button>
+            
               
-            <button class="grid-products__btn">Car Audio</button>
+            <!-- <button class="grid-products__btn">Car Audio</button>
             <button class="grid-products__btn">Formation DUO</button>
             <button class="grid-products__btn">Headphones</button>
-            <button class="grid-products__btn">Compact Monitors</button>
+            <button class="grid-products__btn">Compact Monitors</button> -->
                    
-            <button class="grid-products__btn">Integrated solutions</button> 
+            <!-- <button class="grid-products__btn">Integrated solutions</button> 
             <button class="grid-products__btn">Soundbars</button> 
             <button class="grid-products__btn">Subwoofers</button>
-            <button class="grid-products__btn">Shelf Monitors</button> 
-                            
+            <button class="grid-products__btn">Shelf Monitors</button>  -->
+</div>                            
                            
 
                             <div class="collapse collapse-filters" id="collapseFilters">
@@ -387,24 +397,128 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-9 col-md-8">
+                    <div class="col-lg-10 col-md-8">
                         <div class="row mb-3">
-                            <div class="col-12">
-                                <h1 class="section-title h3"><span>Category Name</span></h1>
+                            <div class="col-12 d-flex justify-content-start">
+                                <h1 class="section-title h3"><span>Category Name:</span></h1>
+
+                                <div id="Loudspeakers" class="tabcontent">
+                                <h1 class="section-title h3"><span>Loudspeakers</span></h1>
+                                </div>
+                                <div id="Mini Theater" class="tabcontent">
+                                <h1 class="section-title h3"><span>Mini Theater</span></h1>
+                                </div>
+                                <div id="Wireless Speakers" class="tabcontent">
+                                <h1 class="section-title h3"><span>Wireless Speakers</span></h1>
+                                </div>
+                                <div id="New Zeppelin" class="tabcontent">
+                                <h1 class="section-title h3"><span>New Zeppelin</span></h1>
+                                </div>
+                                <div id="Car Audio" class="tabcontent">
+                                <h1 class="section-title h3"><span>Car Audio</span></h1>
+                                </div>
+                                <div id="Formation DUO" class="tabcontent">
+                                <h1 class="section-title h3"><span>Formation DUO</span></h1>
+                                </div>
+                                <div id="Headphones" class="tabcontent">
+                                <h1 class="section-title h3"><span>Headphones</span></h1>
+                                </div>
+                                <div id="Compact Monitors" class="tabcontent">
+                                <h1 class="section-title h3"><span>Compact Monitors</span></h1>
+                                </div>
+                                <div id="Integrated solutions" class="tabcontent">
+                                <h1 class="section-title h3"><span>Integrated solutions</span></h1>
+                                </div>
+                                <div id="Soundbars" class="tabcontent">
+                                <h1 class="section-title h3"><span>Soundbars</span></h1>
+                                </div>
+                                <div id="Subwoofers" class="tabcontent">
+                                <h1 class="section-title h3"><span>Subwoofers</span></h1>
+                                </div>
+                                <div id="Shelf Monitors" class="tabcontent">
+                                <h1 class="section-title h3"><span>Shelf Monitors</span></h1>
+                                </div>
                             </div>
-                            <div class="col-4 col-sm-2">
+                            <!-- <div class="col-4 col-sm-2">
                                 <img src="assets/img/products/8.jpg" alt="" class="img-thumbnail">
+                            </div> -->
+                            <div class="row">
+                            <div class="col-lg-2 col-sm-2">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Sort By:</span>
+                                    <select class="form-select" aria-label="Sort by:">
+                                        <option selected>Default</option>
+                                        <option value="1">Name (a-z)</option>
+                                        <option value="2">Name (z-a)</option>
+                                        <option value="3">Price (low &gt; high)</option>
+                                        <option value="4">Price (high &gt; low)</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="col-8 col-sm-10">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate porro
-                                    suscipit sit earum quia aliquid, illum eos esse fuga nam sed molestiae non laborum
-                                    exercitationem saepe, dolores incidunt quidem!</p>
+                            <div class="col-lg-2 col-sm-2">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Цвет:</span>
+                                    <select class="form-select" aria-label="Show:">
+                                        <option selected>9</option>
+                                        <option value="15">15</option>
+                                        <option value="30">30</option>
+                                        <option value="45">45</option>
+                                    </select>
+                                </div>
                             </div>
+                            <div class="col-lg-2 col-sm-2">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Вес:</span>
+                                    <select class="form-select" aria-label="Sort by:">
+                                        <option selected>Default</option>
+                                        <option value="1">100кг</option>
+                                        <option value="2">50кг</option>
+                                        <option value="3">20кг</option>
+                                        <option value="4">10кг</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-2">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Sort By:</span>
+                                    <select class="form-select" aria-label="Sort by:">
+                                        <option selected>Default</option>
+                                        <option value="1">Name (a-z)</option>
+                                        <option value="2">Name (z-a)</option>
+                                        <option value="3">Price (low &gt; high)</option>
+                                        <option value="4">Price (high &gt; low)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-2">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Цена:</span>
+                                    <select class="form-select" aria-label="Show:">
+                                        <option selected>9</option>
+                                        <option value="15">15</option>
+                                        <option value="30">30</option>
+                                        <option value="45">45</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-sm-2">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Sort By:</span>
+                                    <select class="form-select" aria-label="Sort by:">
+                                        <option selected>Default</option>
+                                        <option value="1">Name (a-z)</option>
+                                        <option value="2">Name (z-a)</option>
+                                        <option value="3">Price (low &gt; high)</option>
+                                        <option value="4">Price (high &gt; low)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                         </div>
 
                         <hr>
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-sm-6">
                                 <div class="input-group mb-3">
                                     <span class="input-group-text">Sort By:</span>
@@ -428,7 +542,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="row">
                             <div class="col-lg-4 col-sm-6 mb-3">
@@ -438,7 +552,7 @@
                                         <div class="offer-new">New</div>
                                     </div>
                                     <div class="product-thumb">
-                                        <a href="product.html"><img src="assets/img/products/1.jpg" alt=""></a>
+                                        <a href="product.html"><img src="./img/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="product-details">
                                         <h4>
@@ -454,8 +568,19 @@
                                                 $65
                                             </div>
                                             <div class="product-links">
-                                                <a href="#" class="btn btn-outline-secondary add-to-cart"><i
-                                                        class="fas fa-shopping-cart"></i></a>
+                                                <a href="#" class="btn btn-outline-warning add-to-cart">
+                                                        <svg width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6.57893H16.6038L13.0359 0.319309C12.8589 0.0083658 12.475 -0.093156
+                                                 12.1784 0.0938088C11.8823 0.280773 11.7865 0.684867 11.9641 0.996475L15.1461
+                                                  6.57893H4.85388L8.03587 0.996431C8.21348 0.684823 8.11767 0.280729 7.82164
+                                                   0.0937645C7.52439 -0.0932003 7.14173 0.00832153 6.96411 0.319265L3.39617
+                                                    6.57888H0V7.89468H1.35651L2.94432 16.8103C3.11033 17.7438 3.88547 18.421
+                                                     4.78761 18.421H15.2124C16.1145 18.421 16.8896 17.7438 17.055 16.811L18.6434
+                                                      7.89468H20C20 7.89468 20 6.57893 20 6.57893ZM15.8264 16.5688C15.7715 16.8797
+                                                       15.5133 17.1053 15.2124 17.1053H4.78761C4.4867 17.1053 4.22854 16.8798
+                                                        4.173 16.5681L2.62789 7.89468H17.3721L15.8264 16.5688Z" />
+                                                </svg>
+                                                    </a>
                                             </div>
                                         </div>
                                     </div>
@@ -468,7 +593,7 @@
                                         <div class="offer-hit">Hit</div>
                                     </div>
                                     <div class="product-thumb">
-                                        <a href="product.html"><img src="assets/img/products/2.jpg" alt=""></a>
+                                        <a href="product.html"><img src="./img/products/2.jpg" alt=""></a>
                                     </div>
                                     <div class="product-details">
                                         <h4>
@@ -480,8 +605,19 @@
                                                 $65
                                             </div>
                                             <div class="product-links">
-                                                <a href="#" class="btn btn-outline-secondary add-to-cart"><i
-                                                        class="fas fa-shopping-cart"></i></a>
+                                                <a href="#" class="btn btn-outline-warning add-to-cart">
+                                                        <svg width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6.57893H16.6038L13.0359 0.319309C12.8589 0.0083658 12.475 -0.093156
+                                                 12.1784 0.0938088C11.8823 0.280773 11.7865 0.684867 11.9641 0.996475L15.1461
+                                                  6.57893H4.85388L8.03587 0.996431C8.21348 0.684823 8.11767 0.280729 7.82164
+                                                   0.0937645C7.52439 -0.0932003 7.14173 0.00832153 6.96411 0.319265L3.39617
+                                                    6.57888H0V7.89468H1.35651L2.94432 16.8103C3.11033 17.7438 3.88547 18.421
+                                                     4.78761 18.421H15.2124C16.1145 18.421 16.8896 17.7438 17.055 16.811L18.6434
+                                                      7.89468H20C20 7.89468 20 6.57893 20 6.57893ZM15.8264 16.5688C15.7715 16.8797
+                                                       15.5133 17.1053 15.2124 17.1053H4.78761C4.4867 17.1053 4.22854 16.8798
+                                                        4.173 16.5681L2.62789 7.89468H17.3721L15.8264 16.5688Z" />
+                                                </svg>
+                                                    </a>
                                             </div>
                                         </div>
                                     </div>
@@ -495,7 +631,7 @@
                                         <div class="offer-new">New</div> -->
                                     </div>
                                     <div class="product-thumb">
-                                        <a href="product.html"><img src="assets/img/products/3.jpg" alt=""></a>
+                                        <a href="product.html"><img src="./img/products/3.jpg" alt=""></a>
                                     </div>
                                     <div class="product-details">
                                         <h4>
@@ -507,8 +643,19 @@
                                                 $100
                                             </div>
                                             <div class="product-links">
-                                                <a href="#" class="btn btn-outline-secondary add-to-cart"><i
-                                                        class="fas fa-shopping-cart"></i></a>
+                                                <a href="#" class="btn btn-outline-warning add-to-cart">
+                                                        <svg width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6.57893H16.6038L13.0359 0.319309C12.8589 0.0083658 12.475 -0.093156
+                                                 12.1784 0.0938088C11.8823 0.280773 11.7865 0.684867 11.9641 0.996475L15.1461
+                                                  6.57893H4.85388L8.03587 0.996431C8.21348 0.684823 8.11767 0.280729 7.82164
+                                                   0.0937645C7.52439 -0.0932003 7.14173 0.00832153 6.96411 0.319265L3.39617
+                                                    6.57888H0V7.89468H1.35651L2.94432 16.8103C3.11033 17.7438 3.88547 18.421
+                                                     4.78761 18.421H15.2124C16.1145 18.421 16.8896 17.7438 17.055 16.811L18.6434
+                                                      7.89468H20C20 7.89468 20 6.57893 20 6.57893ZM15.8264 16.5688C15.7715 16.8797
+                                                       15.5133 17.1053 15.2124 17.1053H4.78761C4.4867 17.1053 4.22854 16.8798
+                                                        4.173 16.5681L2.62789 7.89468H17.3721L15.8264 16.5688Z" />
+                                                </svg>
+                                                    </a>
                                             </div>
                                         </div>
                                     </div>
@@ -521,7 +668,7 @@
                                         <div class="offer-hit">Hit</div>
                                     </div>
                                     <div class="product-thumb">
-                                        <a href="product.html"><img src="assets/img/products/4.jpg" alt=""></a>
+                                        <a href="product.html"><img src="./img/products/4.jpg" alt=""></a>
                                     </div>
                                     <div class="product-details">
                                         <h4>
@@ -534,8 +681,19 @@
                                                 $65
                                             </div>
                                             <div class="product-links">
-                                                <a href="#" class="btn btn-outline-secondary add-to-cart"><i
-                                                        class="fas fa-shopping-cart"></i></a>
+                                                <a href="#" class="btn btn-outline-warning add-to-cart">
+                                                       <svg width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6.57893H16.6038L13.0359 0.319309C12.8589 0.0083658 12.475 -0.093156
+                                                 12.1784 0.0938088C11.8823 0.280773 11.7865 0.684867 11.9641 0.996475L15.1461
+                                                  6.57893H4.85388L8.03587 0.996431C8.21348 0.684823 8.11767 0.280729 7.82164
+                                                   0.0937645C7.52439 -0.0932003 7.14173 0.00832153 6.96411 0.319265L3.39617
+                                                    6.57888H0V7.89468H1.35651L2.94432 16.8103C3.11033 17.7438 3.88547 18.421
+                                                     4.78761 18.421H15.2124C16.1145 18.421 16.8896 17.7438 17.055 16.811L18.6434
+                                                      7.89468H20C20 7.89468 20 6.57893 20 6.57893ZM15.8264 16.5688C15.7715 16.8797
+                                                       15.5133 17.1053 15.2124 17.1053H4.78761C4.4867 17.1053 4.22854 16.8798
+                                                        4.173 16.5681L2.62789 7.89468H17.3721L15.8264 16.5688Z" />
+                                                </svg>
+                                                    </a>
                                             </div>
                                         </div>
                                     </div>
@@ -549,7 +707,7 @@
                                         <div class="offer-new">New</div>
                                     </div>
                                     <div class="product-thumb">
-                                        <a href="product.html"><img src="assets/img/products/5.jpg" alt=""></a>
+                                        <a href="product.html"><img src="./img/products/5.jpg" alt=""></a>
                                     </div>
                                     <div class="product-details">
                                         <h4>
@@ -565,8 +723,19 @@
                                                 $65
                                             </div>
                                             <div class="product-links">
-                                                <a href="#" class="btn btn-outline-secondary add-to-cart"><i
-                                                        class="fas fa-shopping-cart"></i></a>
+                                                <a href="#" class="btn btn-outline-warning add-to-cart">
+                                                        <svg width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6.57893H16.6038L13.0359 0.319309C12.8589 0.0083658 12.475 -0.093156
+                                                 12.1784 0.0938088C11.8823 0.280773 11.7865 0.684867 11.9641 0.996475L15.1461
+                                                  6.57893H4.85388L8.03587 0.996431C8.21348 0.684823 8.11767 0.280729 7.82164
+                                                   0.0937645C7.52439 -0.0932003 7.14173 0.00832153 6.96411 0.319265L3.39617
+                                                    6.57888H0V7.89468H1.35651L2.94432 16.8103C3.11033 17.7438 3.88547 18.421
+                                                     4.78761 18.421H15.2124C16.1145 18.421 16.8896 17.7438 17.055 16.811L18.6434
+                                                      7.89468H20C20 7.89468 20 6.57893 20 6.57893ZM15.8264 16.5688C15.7715 16.8797
+                                                       15.5133 17.1053 15.2124 17.1053H4.78761C4.4867 17.1053 4.22854 16.8798
+                                                        4.173 16.5681L2.62789 7.89468H17.3721L15.8264 16.5688Z" />
+                                                </svg>
+                                                    </a>
                                             </div>
                                         </div>
                                     </div>
@@ -580,7 +749,7 @@
                                         <div class="offer-new">New</div>
                                     </div>
                                     <div class="product-thumb">
-                                        <a href="product.html"><img src="assets/img/products/6.jpg" alt=""></a>
+                                        <a href="product.html"><img src="./img/products/6.jpg" alt=""></a>
                                     </div>
                                     <div class="product-details">
                                         <h4>
@@ -593,8 +762,19 @@
                                                 $65
                                             </div>
                                             <div class="product-links">
-                                                <a href="#" class="btn btn-outline-secondary add-to-cart"><i
-                                                        class="fas fa-shopping-cart"></i></a>
+                                                <a href="#" class="btn btn-outline-warning add-to-cart">
+                                                        <svg width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6.57893H16.6038L13.0359 0.319309C12.8589 0.0083658 12.475 -0.093156
+                                                 12.1784 0.0938088C11.8823 0.280773 11.7865 0.684867 11.9641 0.996475L15.1461
+                                                  6.57893H4.85388L8.03587 0.996431C8.21348 0.684823 8.11767 0.280729 7.82164
+                                                   0.0937645C7.52439 -0.0932003 7.14173 0.00832153 6.96411 0.319265L3.39617
+                                                    6.57888H0V7.89468H1.35651L2.94432 16.8103C3.11033 17.7438 3.88547 18.421
+                                                     4.78761 18.421H15.2124C16.1145 18.421 16.8896 17.7438 17.055 16.811L18.6434
+                                                      7.89468H20C20 7.89468 20 6.57893 20 6.57893ZM15.8264 16.5688C15.7715 16.8797
+                                                       15.5133 17.1053 15.2124 17.1053H4.78761C4.4867 17.1053 4.22854 16.8798
+                                                        4.173 16.5681L2.62789 7.89468H17.3721L15.8264 16.5688Z" />
+                                                </svg>
+                                                    </a>
                                             </div>
                                         </div>
                                     </div>
@@ -608,7 +788,7 @@
                                         <div class="offer-new">New</div>
                                     </div>
                                     <div class="product-thumb">
-                                        <a href="product.html"><img src="assets/img/products/7.jpg" alt=""></a>
+                                        <a href="product.html"><img src="./img/products/7.jpg" alt=""></a>
                                     </div>
                                     <div class="product-details">
                                         <h4>
@@ -623,8 +803,19 @@
                                                 $65
                                             </div>
                                             <div class="product-links">
-                                                <a href="#" class="btn btn-outline-secondary add-to-cart"><i
-                                                        class="fas fa-shopping-cart"></i></a>
+                                                <a href="#" class="btn btn-outline-warning add-to-cart">
+                                                       <svg width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6.57893H16.6038L13.0359 0.319309C12.8589 0.0083658 12.475 -0.093156
+                                                 12.1784 0.0938088C11.8823 0.280773 11.7865 0.684867 11.9641 0.996475L15.1461
+                                                  6.57893H4.85388L8.03587 0.996431C8.21348 0.684823 8.11767 0.280729 7.82164
+                                                   0.0937645C7.52439 -0.0932003 7.14173 0.00832153 6.96411 0.319265L3.39617
+                                                    6.57888H0V7.89468H1.35651L2.94432 16.8103C3.11033 17.7438 3.88547 18.421
+                                                     4.78761 18.421H15.2124C16.1145 18.421 16.8896 17.7438 17.055 16.811L18.6434
+                                                      7.89468H20C20 7.89468 20 6.57893 20 6.57893ZM15.8264 16.5688C15.7715 16.8797
+                                                       15.5133 17.1053 15.2124 17.1053H4.78761C4.4867 17.1053 4.22854 16.8798
+                                                        4.173 16.5681L2.62789 7.89468H17.3721L15.8264 16.5688Z" />
+                                                </svg>
+                                                    </a>
                                             </div>
                                         </div>
                                     </div>
@@ -638,7 +829,7 @@
                                         <div class="offer-new">New</div>
                                     </div>
                                     <div class="product-thumb">
-                                        <a href="product.html"><img src="assets/img/products/8.jpg" alt=""></a>
+                                        <a href="product.html"><img src="./img/products/8.jpg" alt=""></a>
                                     </div>
                                     <div class="product-details">
                                         <h4>
@@ -651,8 +842,19 @@
                                                 $65
                                             </div>
                                             <div class="product-links">
-                                                <a href="#" class="btn btn-outline-secondary add-to-cart"><i
-                                                        class="fas fa-shopping-cart"></i></a>
+                                                <a href="#" class="btn btn-outline-warning add-to-cart">
+                                                        <svg width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6.57893H16.6038L13.0359 0.319309C12.8589 0.0083658 12.475 -0.093156
+                                                 12.1784 0.0938088C11.8823 0.280773 11.7865 0.684867 11.9641 0.996475L15.1461
+                                                  6.57893H4.85388L8.03587 0.996431C8.21348 0.684823 8.11767 0.280729 7.82164
+                                                   0.0937645C7.52439 -0.0932003 7.14173 0.00832153 6.96411 0.319265L3.39617
+                                                    6.57888H0V7.89468H1.35651L2.94432 16.8103C3.11033 17.7438 3.88547 18.421
+                                                     4.78761 18.421H15.2124C16.1145 18.421 16.8896 17.7438 17.055 16.811L18.6434
+                                                      7.89468H20C20 7.89468 20 6.57893 20 6.57893ZM15.8264 16.5688C15.7715 16.8797
+                                                       15.5133 17.1053 15.2124 17.1053H4.78761C4.4867 17.1053 4.22854 16.8798
+                                                        4.173 16.5681L2.62789 7.89468H17.3721L15.8264 16.5688Z" />
+                                                </svg>
+                                                    </a>
                                             </div>
                                         </div>
                                     </div>
@@ -666,7 +868,7 @@
                                         <div class="offer-new">New</div>
                                     </div>
                                     <div class="product-thumb">
-                                        <a href="product.html"><img src="assets/img/products/1.jpg" alt=""></a>
+                                        <a href="product.html"><img src="./img/products/1.jpg" alt=""></a>
                                     </div>
                                     <div class="product-details">
                                         <h4>
@@ -682,8 +884,19 @@
                                                 $65
                                             </div>
                                             <div class="product-links">
-                                                <a href="#" class="btn btn-outline-secondary add-to-cart"><i
-                                                        class="fas fa-shopping-cart"></i></a>
+                                                <a href="#" class="btn btn-outline-warning add-to-cart">
+                                                   <svg width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 6.57893H16.6038L13.0359 0.319309C12.8589 0.0083658 12.475 -0.093156
+                                                 12.1784 0.0938088C11.8823 0.280773 11.7865 0.684867 11.9641 0.996475L15.1461
+                                                  6.57893H4.85388L8.03587 0.996431C8.21348 0.684823 8.11767 0.280729 7.82164
+                                                   0.0937645C7.52439 -0.0932003 7.14173 0.00832153 6.96411 0.319265L3.39617
+                                                    6.57888H0V7.89468H1.35651L2.94432 16.8103C3.11033 17.7438 3.88547 18.421
+                                                     4.78761 18.421H15.2124C16.1145 18.421 16.8896 17.7438 17.055 16.811L18.6434
+                                                      7.89468H20C20 7.89468 20 6.57893 20 6.57893ZM15.8264 16.5688C15.7715 16.8797
+                                                       15.5133 17.1053 15.2124 17.1053H4.78761C4.4867 17.1053 4.22854 16.8798
+                                                        4.173 16.5681L2.62789 7.89468H17.3721L15.8264 16.5688Z" />
+                                                </svg>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1203,5 +1416,24 @@ s
     <a href="#" id="toTop" style="display: block">
       <span id="toTopHover" style="opacity: 1"> </span
     ></a>
+    <!-- tabs -->
+    <script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
   </body>
 </html>

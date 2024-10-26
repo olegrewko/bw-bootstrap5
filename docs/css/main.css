@@ -7,7 +7,7 @@
     --gray-color: #ccc;
     --red-color: #ee6e73;
     --light-grey-color: #eee;
-    --tundora: # ;
+    --color-tundora: darkslategray;
 }
 @font-face {
   font-family: "Jost";
@@ -23,6 +23,12 @@
   font-display: swap;
   font-style: normal;
 }
+/* tab */
+.tab button.active {
+    background-color: black;
+    color: white;
+}
+/* tab  */
 .z-one {
     z-index: 10000;
 }
@@ -991,7 +997,7 @@ section {
     padding: 50px 0;
 }
 
-.section-title {
+/* .section-title {
     position: relative;
     text-transform: uppercase;
     color: var(--contrast-color);
@@ -1012,7 +1018,7 @@ section {
     top: 50%;
     left: 0;
     border-top: 1px dashed var(--text-color);
-}
+} */
 
 label.required::before {
     content: '* ';
