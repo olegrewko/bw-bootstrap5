@@ -23,6 +23,13 @@
   font-display: swap;
   font-style: normal;
 }
+.container1004 {
+    max-width: 1004px;
+    width: 100%;
+}
+.bg-black {
+    background-color: black;
+}
 /* tab */
 .tab button.active {
     background-color: black;
@@ -51,7 +58,7 @@ main.main {
 }
 a {
     text-decoration: none;
-    /* color: $orange-900; */
+    
 }
 .header-logo {
     color: grey;
@@ -64,7 +71,7 @@ a {
 .header-bottom {
     height: 40px;
     background-color: transparent;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.9);
 }
 .header-bottom .nav-item:first-child .nav-link {
     padding-left: 0;
@@ -309,10 +316,10 @@ background: tomato;
 
 }
 .cell-800--black {
- max-width: 800px;
+ max-width: 900px;
  width: 100%;
- margin: 0px;
- padding: 5px;
+ 
+ margin-top: 20px;;
  margin: 0 auto;
  background-color: black;
 }
@@ -343,7 +350,7 @@ text-align: left;
 }
 
 .monitors {
- background-color: #eee;   
+ background-color: black;   
 }
 .product__content-box {
     display: flex;
@@ -516,13 +523,14 @@ a:hover {
    background-color: black;
  
     border-bottom: 0px solid #636e74;
-  padding-top: 0.3rem;
-  padding-bottom: 0.4rem;
+  padding-top: 0;
+  padding-bottom: 0;
   color: #636e74;
  
 }
 .footer {
-   padding-top: 10px;
+   padding-top: 0px;
+   margin-top: 0px;
    background-color: black;
    width: 100%;
  
@@ -567,9 +575,7 @@ a:hover {
   
 }
 .subscribe-form-black__btn {
-    /* position: absolute;
-    right: 45px;
-    bottom: 10px; */
+   
     height: 30px;
     font-size: 12px;
     line-height: 14px;
@@ -706,10 +712,13 @@ color: grey;
   justify-content: space-between;
   align-items: center;
     
-  
   padding: 10px 5px 5px;
 }
-/* .card__list-btn--btn */
+.socialmap {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/* ********************************footer************************************* */
 .card__list-btn--btn {
     display: flex;
     justify-content: center; 
@@ -751,7 +760,7 @@ color: grey;
     border: 2px solid black;
     border-radius: 2px;
     margin-top: 2px;
-    background-color: transparent;  
+    background-color: white;  
     color: black;
     transition: color 0.3s, background-color 0.3s;
  }
@@ -993,9 +1002,7 @@ color: grey;
     padding-left: 0.5rem;
     color: var(--contrast-color);
 }
-section {
-    padding: 50px 0;
-}
+
 
 /* .section-title {
     position: relative;
@@ -1146,3 +1153,30 @@ label.required::before {
 }
 
 /* ============================= Cart Page ============================ */
+.duo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.duo img{
+    max-width: 700px;
+    width: 100%;
+}
+/* ============================= media ============================ */
+@media only screen and (max-width : 600px) {
+    .header-bottom {
+        margin-top: 80px;
+    }
+}
+
+.zeppelin {
+        max-width: 900px;
+        width: 100%;
+}
+.enjoy {
+        flex-wrap: wrap;
+}
+.enjoy img {
+        max-width: 500px;
+        width: 100%;
+}
