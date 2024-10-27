@@ -23,6 +23,9 @@
   font-display: swap;
   font-style: normal;
 }
+.minicart:hover {
+    color: darkslategray;
+}
 .container1004 {
     max-width: 1004px;
     width: 100%;
@@ -453,7 +456,7 @@ text-align: left;
 
 .product-price {
     font-size: 18px;
-    color: var(--red-color);
+    color: darkslategray;;
     font-weight: 600;
 }
 
